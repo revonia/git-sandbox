@@ -1,0 +1,12 @@
+{
+  "name": "git-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/revonia/git-sandbox.git",
+  "author": "linke <linke@tuya.com>",
+  "license": "MIT",
+  "scripts": {
+    "gls": "git subtree pull --squash --prefix=sub/ https://github.com/revonia/git-sandbox-sub.git $(git rev-parse --abbrev-ref HEAD)",
+    "gps": "git subtree push --squash --prefix=sub/ https://github.com/revonia/git-sandbox-sub.git $(git rev-parse --abbrev-ref HEAD)"
+  }
+}
